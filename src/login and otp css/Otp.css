@@ -1,0 +1,99 @@
+body {
+  height: 100%;
+  background-color: #130247;
+}
+.otp-body{
+  margin: 0%;
+  background-color: #130247;
+}:where(form, .input-field,.submitt,.resendd) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.previous {
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  padding: .6em 1em;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+.previous:hover {   
+  background-color: #797777;
+  color: rgb(255, 255, 255);
+}
+.heading-otp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  margin:0%;
+  min-height: 35vh;
+  font: 500 2.5em 'Raleway', sans-serif;
+}
+.timer{
+  align-items: center;
+  min-height: 8vh;
+  font: 550 1em 'Raleway', sans-serif;
+  color:white ;
+}
+.input-field {
+  min-height: 15vh;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.input-field input {
+  height: 45px;
+  width: 42px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.input-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+.resend-button {
+  width:20%;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}  
+.submitt{
+  width:100%;
+  min-height: 30vh;
+  text-align: center;
+}
+.submit-button {
+  padding: 10px;
+  width: 70%;
+  border-radius: 40px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.submit-button:hover , .resend-button:hover {
+  background-color: #023974;
+  box-shadow: 0 5px 15px #afe0f5;
+  transform: scale(1.05) ;
+  text-transform: underline;
+  animation: animate 8s linear infinite;
+  transition: all .5s ease;
+}
+.submit-button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}

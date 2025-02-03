@@ -1,0 +1,55 @@
+#root {
+  height: 100%;
+}
+html,body {
+  padding: 0%;
+}
+.full{
+  height: 100%;
+  text-align: center;
+  background: url(../others/rm383-14.jpg)no-repeat center center fixed ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.full2{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap:40px;
+  margin-bottom: 500px;
+}
+a{
+  width:100%;
+}
+.mobile{
+  padding:20px;
+  text-transform: none;
+  border: 1px solid #8D8C8D;
+  width: 60%;
+  border-radius: 40px;
+  background-color: transparent;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  color: white;
+} 
+.mobile:hover{
+  background-image: linear-gradient(to right, #4331e3, #695be0) ;
+  box-shadow: 0 5px 15px #afe0f5;
+  transform: scale(1.05) ;
+  text-transform: underline;
+  animation: animate 8s linear infinite;
+  transition: all .5s ease;
+}
+.heading{
+  text-transform: uppercase;
+  font: 500 2.5em 'Raleway', sans-serif;
+  color: white;
+}
+.desc{
+  font: 550 1em 'Raleway', sans-serif;
+  width: 60%;
+  color:#ADADAD;
+}

@@ -1,0 +1,198 @@
+/* Background */
+html {
+  background: linear-gradient(135deg, #130247, #3b0a88);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Back Button */
+.back {
+  height: 10%;
+}
+
+.previous {
+  width:10px;
+  position:absolute;
+  top:0;
+  left:0;
+  text-decoration: none;
+  font-size: 20px;
+  display:inline-flex;
+  padding: .6em 1em;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+.previous:hover {   
+  background-color: #797777;
+  color: rgb(255, 255, 255);
+}
+
+/* Heading & Description */
+.heading {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.desc {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #d1cfe2;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.phone {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Phone Number Dropdown & Input */
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.phone-dropdown {
+  text-align: center;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+.phone-dropdown:focus {
+  border-color: #5c45e1;
+  box-shadow: 0 0 10px #5b50d2;
+}
+
+.drop {
+  color: black;
+}
+
+/* Submit Button */
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  width: 40%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #0056b3, #909cea);
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(85, 123, 187, 0.5);
+}
+
+.submit-button {
+  border: 1px solid #8D8C8D;
+  width: 40%;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #007bff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  color: white;
+  cursor: pointer;
+}
+.phone-dropdown{
+  text-align: center;
+  border-color: white;
+  border-width: 2px;
+  padding: 4%;
+  margin:1px;
+  border-radius: 10px;
+  background-color:transparent;
+  color: white;
+}
+.drop{
+  color: black;
+}
+.images{
+  width: 100%;
+  display: flex;
+  gap:3%;
+  min-height: 10vh;
+}
+
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #0056b3, #909cea);
+  box-shadow: 0 6px 15px rgba(56, 120, 142, 0.7);
+  transform: scale(1.05);
+}
+
+.submit-button[disabled] {
+  background: #444;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+
+
+/* Social Media Icons */
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.img {
+  width: 50px;
+  transition: 0.3s;
+}
+
+.img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .submit-button {
+    width: 80%;
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+
+  .desc {
+    font-size: 1em;
+  }
+
+  .phone-dropdown {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+}
